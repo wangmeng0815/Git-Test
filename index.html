@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="3rd/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="3rd/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="3rd/angularjs/angular.min.js"></script>
+		
+		<script type="text/javascript" src="3rd/angularjs/angular-ui-router.js"></script>
+		
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/controller/homeCtrl.js"></script>
+		<script type="text/javascript" src="js/controller/helpCtrl.js"></script>
+		<script type="text/javascript" src="js/controller/settingCtrl.js"></script>
+		<script type="text/javascript" src="js/controller/contentCtrl.js"></script>
+		<script type="text/javascript" src="js/controller/listCtrl.js"></script>
+		<script type="text/javascript" src="js/controller/detailCtrl.js"></script>
+		
+		<title>angular-ui-router学习页面</title>
+	</head>
+
+	<body>
+		<div>
+			<nav>
+				<a ui-sref="home">首页</a>
+				<a ui-sref="setting">设置</a>
+				<a ui-sref="help">帮助</a>
+				<a ui-sref="content">内容</a>
+			</nav>
+		</div>
+		<div ui-view></div>
+	</body>
+
+</html>
